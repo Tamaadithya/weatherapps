@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>//Tugas Weather//</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <!--Sedang mencari ide layout yang baik & belajar dulu ya pak :(:(:( )))-->
+    <!--Wait and see-->
+
+    <div class="container">
+        <div class="header">
+            <h2>TamaWeather</h2>
+            <div class="Search">
+                <input type="text" name="city" id="city_input" placeholder="Enter city name">
+                <button type="button" id="searchBtn">
+                    <i class="fa fa-search"></i> Search
+                </button>
+            </div>
+        </div>
+        <div class="Weather">
+            <div class="Weather-kiri">
+                <div class="card">
+                    <div class="Weather-today">
+                        <div class="details">
+                            <p>Hari Ini</p>
+                            <h2 id="current-temperature">_____&deg;C</h2>
+                        </div>
+                        <div class="Weather-icon" id="imageweather">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="Card-footer">
+                        <p><i class="fa fa-map-marker"id="location"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="Weather-kanan">
+                <h2>highlights</h2>
+                <div class="highlights">
+                    <div class="card">
+                        <div class="card-head">
+                            <p>humidity</p>
+                        </div>
+                        <div class="card-item">
+                            <i class="fa-light fa-droplet fa2x"></i>
+                            <h2 id="Humidity">_____%</h2>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-head">
+                            <p>pressure</p>
+                        </div>
+                        <div class="card-item">
+                            <i class="fa-light fa-compass fa2x"></i>
+                            <h2 id="pressure">_____hPa</h2>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-head">
+                            <p>Precipitation</p>
+                        </div>
+                        <div class="card-item">
+                            <i class="fa-light fa-eye fa2x"></i>
+                            <h2 id="Precipitation">_____mm</h2>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-head">
+                            <p>Wind</p>
+                        </div>
+                        <div class="card-item">
+                            <i class="fa-light fa-location-arrow fa2x"></i>
+                            <h2 id="Wind">_____m/s</h2>
+                        </div>
+                    </div>
+                </div>
+                <h2>today at</h2>
+                <div class="hourly-forecast" id="sevendays">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
